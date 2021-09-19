@@ -1,0 +1,151 @@
+
+body{
+	background-color:white;
+	font-family:Arial, sans-serif;
+	padding-left:100pt;
+	padding-right:100pt;
+	padding-top:30pt;
+	padding-bottom:30pt;
+	font-size:100%;
+}
+h1{
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size: 150%;
+    padding-bottom: 30pt;
+}
+h2{
+    text-align:right;
+    padding-top:15pt;
+	padding-bottom:15pt;
+    font-weight: normal;
+}
+h3{
+    text-align:right;
+    padding-top:15pt;
+	padding-bottom:15pt;
+    font-weight: normal;
+    display: none;
+}
+
+caption{
+	text-align:right;
+    padding-top:30pt;
+	padding-bottom:15pt;
+}
+table.table1{
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 15px;
+    width: 100%;
+    background-color: #ccedff;
+}
+
+table.table1 td{
+    border: 7px dotted blue;
+    padding: 5pt;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.table2{
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 15px;
+    width: 50%;
+    background-color: grey;
+    border: 3px solid yellow;
+}
+
+
+input.inp1{
+    font-size:110%;
+    color: #e30451;
+    font-weight:bold;
+    border: 2px solid #ff14c9;
+    border-radius: 7px;
+    background-color: #fce7e7;
+}
+
+.img1 {
+    padding: 25px;
+    float: none;
+}
+
+.img2 {
+    border: 2px dotted blue;
+    padding: 10px;
+}
+
+.img3 {
+    opacity: 100%;
+    border: 4px double #b804ef;
+    padding: 15px;
+    width: 400px;
+}
+
+
+
+div.div1{
+    padding-top:30pt;
+	padding-bottom:30pt;
+}
+
+div.div2{
+    padding-top:30pt;
+	padding-bottom:30pt;
+    background-color: aqua ;
+}
+
+div.div3{
+    padding-top:30pt;
+	padding-bottom:30pt;
+    background-color: deepskyblue;
+}
+
+div.div4{
+    padding-top:30pt;
+	padding-bottom:30pt;
+    background-color: yellow;
+}
+
+a.link1{
+	color:#005ef4;
+	font-size:120%;
+	line-height:200%;
+}
+textarea {
+    padding: 10px 4px;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px;
+    border: 3px solid #d80000;
+    text-align: justify;
+}
+
+
+.class1{
+    background: #0f528b;
+    color: #ffffff;
+    font-style: italic;
+    font-weight:bold;
+    font-size: 120%;
+    border: 3px double #ffe200;
+}
+.class2{     
+    background-color: white;     
+    color: black;
+}
+
+.class3{     
+    background-color: azure;
+}
+
+.class4{     
+    background-color: #ff0000;
+    font-weight: bolder;
+    color: #ffe200;
+}
+
+

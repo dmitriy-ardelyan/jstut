@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Веб-программирование, (задание №3, вариант №11) Ардельян Д. А. Группа КИТ-118за </title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <script>
+        document.addEventListener('keydown',(event) => {
+            var name = event.key;
+            var code = event.code;
+            
+            if(code == "F1"){
+                alert(`q,w,e - show/hide blocks \n r - show 1 and 3 block \n LeftAlt - show explanation above block number 1 \n RightShift - hide explanation \n F1 - help window`);
+            }
+            if(code == "AltLeft"){
+                document.getElementById("explanation").style.display = "contents";
+            }
+            if(code == "ShiftRight"){
+                document.getElementById("explanation").style.display = "none";
+            }
+            if(name == "q") {
+                var element = document.getElementById("blockWithTable");
+                if(element.style.visibility == "hidden"){
+                    element.style.visibility = "visible";
+                } else {
+                    element.style.visibility = "hidden";    
+                }   
+            }
+            
+            if(name == "w") {
+                var element = document.getElementById("blockWithUL");
+                if(element.style.visibility == "hidden"){
+                    element.style.visibility = "visible";
+                } else {
+                    element.style.visibility = "hidden";    
+                }   
+            }
+            
+            if(name == "e") {
+                var element = document.getElementById("lastBlock");
+                if(element.style.visibility == "hidden"){
+                    element.style.visibility = "visible";
+                } else {
+                    element.style.visibility = "hidden";    
+                }   
+            }
+            
+            if(name == "r") {
+               document.getElementById("blockWithTable").style.visibility = "visible"; 
+               document.getElementById("lastBlock").style.visibility = "visible"; 
+            }
+        })
+    </script>
+<h1> Скрытие элементов Web-страницы. Работа с клавиатурой </h1>
+<div>
+    <a href="index_5_0.html"><input class="inp1" type="button" name="but1" value="Задание"></a>
+</div> 
+<h2>Практическое задание № 3, вариант № 11.</h2>
+    <h3 id="explanation">Это пояснение!!Ниже нарисована таблица!!!</h3>
+<div>
+    <div class = "div3" id = "blockWithTable">
+        <h3> Блок с элементом таблица </h3>
+        <table class="table2">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+    </div>
+    
+    <div class="div2" id = "blockWithUL">
+        <h3> Блок с элементом Unsigned List </h3>
+        <ul> 
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+    </div> 
+
+    <div class="div4" id = "lastBlock">
+        <h3> Блок с элементами SPAN, A </h3>
+        <a href="https://www.w3schools.com/tags/tag_a.asp" class="link1">Посетить w3schools</a>
+        <p>My cat has <span style="color:blue">blue</span> eyes.</p>
+    </div> 
+    
+    
+</div>   
+<div class="div1">
+    <a href="../index_main.html" class="link1">К оглавлению</a>
+</div>    
+</body>
+</html>
